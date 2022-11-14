@@ -110,3 +110,6 @@ To delete a branch named monitor
 
 To rename a branch  
 `git branch -m <newName>`
+
+
+<!-- git reset --hard HEAD~1 -->
