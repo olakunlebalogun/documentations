@@ -9,6 +9,15 @@ To get the documentation for a particular command
 To get the overall commands  
 `docker --help`
 
+## Login in and out  
+
+To login  
+> it asks for a username and password
+`docker login`
+
+To logout  
+`docker logout`
+
 
 ## Containers and Images Status
 
@@ -125,9 +134,9 @@ specifically, we can add the tag name
 To tag an image 
 `docker build -t goals:latest .`
 
-To rename an image tag  
-> Note that this creates a clone of the image  
-`docker tag OLD_NAME:TAG  NEW_NAME:TAG`
+To rename an image tag    
+> Note that this creates a clone of the image    
+`docker tag OLD_NAME:TAG  NEW_NAME:TAG`  
 
 
 ## Inspecting Images
