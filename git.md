@@ -283,3 +283,50 @@ To rename a branch
 <!-- git reset --hard HEAD~1 -->
  git switch -c <new-branch-name>
   git switch -
+
+
+Updated for Git 2.23: For older versions, see the section at the end.
+
+With One Remote
+In both cases, start by fetching from the remote repository to make sure you have all the latest changes downloaded.
+
+$ git fetch
+This will fetch all of the remote branches for you. You can see the branches available for checkout with:
+
+$ git branch -v -a
+
+...
+remotes/origin/test
+The branches that start with remotes/* can be thought of as read only copies of the remote branches. To work on a branch you need to create a local branch from it. This is done with the Git command switch (since Git 2.23) by giving it the name of the remote branch (minus the remote name):
+
+$ git switch test
+In this case Git is guessing (can be disabled with --no-guess) that you are trying to checkout and track the remote branch with the same name.
+
+With Multiple Remotes
+In the case where multiple remote repositories exist, the remote repository needs to be explicitly named.
+
+As before, start by fetching the latest remote changes:
+
+$ git fetch origin
+This will fetch all of the remote branches for you. You can see the branches available for checkout with:
+
+$ git branch -v -a
+With the remote branches in hand, you now need to check out the branch you are interested in with -c to create a new local branch:
+
+$ git switch -c test origin/test
+For more information about using git switch:
+
+$ man git-switch
+I also created the image below for you to share the differences, look at how to fetch works, and also how it's different to pull:
+
+enter image description here
+
+Prior to Git 2.23
+git switch was added in Git 2.23, prior to this git checkout was used to switch branches.
+
+To checkout out with only a single remote repository:
+
+git checkout test
+if there there are multiple remote repositories configured it becomes a bit longer
+
+git checkout -b test <name of remote>/test
