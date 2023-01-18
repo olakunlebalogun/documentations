@@ -330,3 +330,19 @@ git checkout test
 if there there are multiple remote repositories configured it becomes a bit longer
 
 git checkout -b test <name of remote>/test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## GIT SUBMODULE
