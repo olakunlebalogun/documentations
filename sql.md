@@ -28,3 +28,18 @@ To get specific information on a section use *HELP SECTION* e.g for Data Manipul
 ## Shortcuts 
 `\?` or `\h`  Informative help  
 
+## Entity Relatioship Diagram  
+
+- Entity is a rectangle  
+- Attributes are oval  
+- Multivalued attributes are double-ovaled  
+- Composite atrributes have further oval attributes  
+- Primary attributes are underlined.  
+- Relationships are diamond shaped  
+- Relationships too can have attributes.  
+- Cardinality of entity relationship.. M:M, 1:M, M:1, 1:1  
+- Relationships betwwen entity can be partial or total  
+- Total relationship are double-lined between entity box and the relationship diamond  
+- Weak entities have total participation  
+- Weak entities are double-rectangled and their primary keys are dashed lined  
+ 

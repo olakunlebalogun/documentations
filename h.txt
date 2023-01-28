@@ -1,9 +1,0 @@
-      name:
-      cardNumber:
-      amount:
-      totalBalance:
-      transactionType:
-      reference:
-      channel:
-      tranDate:
-      email:
