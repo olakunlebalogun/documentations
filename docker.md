@@ -34,7 +34,11 @@ To get containers and their sizes
 `docker ps -as`
 
 To check all images  
-`docker images` OR `docker image ls` 
+`docker images` OR `docker image ls`  
+
+To show container IP address  
+`docker inspect <container-id> | grep "IPAddress"
+`
 
 ## Running Containers  
 

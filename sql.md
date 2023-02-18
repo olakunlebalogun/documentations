@@ -4,7 +4,16 @@
 Logging in from the Terminal  
 `mysql --user=username --password=password`  
 Other options are:  
-`--host=hostname --port=port`
+`--host=hostname --port=port`  
+
+Creating a new connection  
+`SHOW GRANTS FOR 'docker_db'@'172.18.0.1';
+`
+
+
+To grant all access to user docker_db
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'docker_db'@'172.18.0.1' IDENTIFIED BY '<password>';
+
 
 To check MySQL version  
 `SELECT VERSION();`  
