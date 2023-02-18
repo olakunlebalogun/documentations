@@ -183,3 +183,12 @@ This copies the files from the file system to the image WORKDIR
 * **CMD**  
   This is the command that runs when the image has been built to make it run e.g npm start, mvn spring-boot:run 
   > But it should be in arrays of strings e.g ["npm", "start"]
+
+
+  ## Docker Compose
+
+  To run a docker compose file  
+  `docker-compose up`
+
+    To run a docker compose file in detached mode  
+  `docker-compose up --build -d --remove-orphans`
