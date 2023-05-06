@@ -338,6 +338,15 @@ git checkout -b test <name of remote>/test
 
 
 
+## GIT TAGS
+ Creating annotated tags  
+ `$ git tag -a v1.4 -m "my version 1.4"`  
+  
+Listing all the tags  
+`git tag`  
+
+To show the commit leading to a specific tag   
+`git show v1.0`  
 
 
 

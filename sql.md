@@ -6,13 +6,18 @@ Logging in from the Terminal
 Other options are:  
 `--host=hostname --port=port`  
 
-Creating a new connection  
+To display all privileges/permission for a given user   
 `SHOW GRANTS FOR 'docker_db'@'172.18.0.1';
 `
 
 
-To grant all access to user docker_db
-mysql> GRANT ALL PRIVILEGES ON *.* TO 'docker_db'@'172.18.0.1' IDENTIFIED BY '<password>';
+To grant all access to user docker_db  
+`> GRANT ALL PRIVILEGES ON *.* TO 'docker_db'@'172.18.0.1' IDENTIFIED BY '<password>'`;
+
+To create a new user using authentication_plugin as security    
+`CREATE USER 'username'@'host' IDENTIFIED WITH authentication_plugin BY 'password';`
+
+
 
 
 To check MySQL version  
@@ -52,3 +57,6 @@ To get specific information on a section use *HELP SECTION* e.g for Data Manipul
 - Weak entities have total participation  
 - Weak entities are double-rectangled and their primary keys are dashed lined  
  
+
+ ## References
+ - [Digital Ocean documentatiom](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)

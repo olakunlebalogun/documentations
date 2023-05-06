@@ -18,6 +18,13 @@ The most efficient one is **useradd**
 
 `
 
+## To check system's IP address  
+`hostname -I | cut -d' ' -f1`    
+
+## To kill process on a specific port e.g 8080    
+```
+sudo kill -9 `sudo lsof -t -i:8080`
+```
 
 
 
