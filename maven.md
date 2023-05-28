@@ -1,3 +1,15 @@
+REsources
+ - blogs and articles
+ - video
+ - courses
+ - books
+  - check maven book folder locally
+  - Appendix A scetion in JPA book(2023)
+  - Baeldung book on maven
+
+
+
+
 mvn --version			
 Prints out the version of Maven you are running.
 
@@ -132,3 +144,4 @@ pre-site
 site
 post-site
 site-deploy.
+
