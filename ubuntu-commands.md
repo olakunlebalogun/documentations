@@ -356,3 +356,4 @@ kill with
 
 Hard kill  
 `kill 9 $(lsof -t -i: PORT )`
+sudo kill -9 $(sudo lsof -t -i:9001)
