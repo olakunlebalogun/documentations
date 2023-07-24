@@ -69,6 +69,15 @@ text
 
 
 
+## Building spring boot application images
+- Using the basic commands, to do this follow these steps: 
+  - run the package command `mvn clean package`  
+  - build the jar file using the build command `docker build .`  
+  **N:B** this is after the Dockerfile has been written to suit the jar file name.
+- Using maven in build docker image build command.  
+To do this, just run this command `mvn package dockerfile:build`
+- Using buildpack (Check [here](https://docs.spring.io/spring-boot/docs/2.3.0.M1/maven-plugin/html/))  
+To do this, run `mvn spring-boot:build-image`
 
 
 
